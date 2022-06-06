@@ -4,7 +4,7 @@ const navBar = () => {
   const domString = `<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+      <img src="https://w7.pngwing.com/pngs/119/1012/png-transparent-computer-icons-vocabulary-youtube-notification-angle-text-logo.png" alt="Vocab-YOU-lary Logo" width="40" height="30">
     </a>
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
