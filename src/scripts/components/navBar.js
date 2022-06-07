@@ -1,6 +1,6 @@
 import renderToDom from '../helpers/renderToDom';
 
-const navBar = () => {
+const navbar = () => {
   const domString = `<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -25,4 +25,4 @@ const navBar = () => {
   renderToDom('#nav-bar', domString);
 };
 
-export default navBar;
+export default navbar;

@@ -5,7 +5,7 @@ const formEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
     // CLICK EVENT FOR SUBMITTING FORM FOR ADDING VOCAB CARD
-    if (e.target.id.includes('')) {
+    if (e.target.id.includes('submit-vocab-word')) {
       const newVocabCardObj = {
         word: document.querySelector('#word').value,
         definition: document.querySelector('#definition').value,
