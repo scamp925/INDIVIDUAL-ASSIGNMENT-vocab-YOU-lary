@@ -12,6 +12,13 @@ const getVocabCards = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// GET SINGLE VOCAB CARD
+const getSingleVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/cards/${firebaseKey}.json`)
+    .then((response) => resolve(response.data))
+    .catch(reject);
+});
+
 // CREATE VOCAB CARD
 const createVocabCard = (newVocabCardObj) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/cards.json`, newVocabCardObj)
@@ -25,7 +32,16 @@ const createVocabCard = (newVocabCardObj) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// UPDATE VOCAB CARD
+const updateVocabCard = (vocabCardObj) => new Promise((resolve, reject) => {
+  axios.patch(`${dbUrl}/cards/${vocabCardObj.firebaseKey}.json`, vocabCardObj)
+    .then(() => getVocabCards(vocabCardObj.uid).then(resolve))
+    .catch(reject);
+});
+
 export {
   getVocabCards,
+  getSingleVocabCard,
   createVocabCard,
+  updateVocabCard,
 };
