@@ -38,10 +38,19 @@ const updateVocabCard = (vocabCardObj) => new Promise((resolve, reject) => {
     .then(() => getVocabCards(vocabCardObj.uid).then(resolve))
     .catch(reject);
 });
+// DELETE VOCAB CARD
+const deleteVocabCard = (uid, firebaseKey) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/cards/${firebaseKey}.json`)
+    .then(() => {
+      getVocabCards(uid).then((vocabArray) => resolve(vocabArray));
+    })
+    .catch(reject);
+});
 
 export {
   getVocabCards,
   getSingleVocabCard,
   createVocabCard,
   updateVocabCard,
+  deleteVocabCard,
 };
