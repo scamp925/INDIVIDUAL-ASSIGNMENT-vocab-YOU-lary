@@ -3,11 +3,13 @@ import logoutButton from '../components/buttons/logoutButton';
 import domBuilder from '../components/domBuilder';
 import navbar from '../components/navbar';
 import vocabCards from '../components/pages/vocabCards';
+import domEvents from '../events/domEvents';
 import formEvents from '../events/formEvents';
 import navbarEvents from '../events/navbarEvents';
 
 const startApp = (user) => {
   domBuilder();
+  domEvents(user.uid);
   formEvents(user.uid);
   navbar();
   logoutButton();
