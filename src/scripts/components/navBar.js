@@ -5,7 +5,7 @@ const navbar = () => {
   const domString = `<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" id="home">
-      <img src=${ABC} alt="ABC blocks" width="30" height="24">
+      <img src=${ABC} alt="ABC blocks" width="100" height="50">
       Vocab-YOU-lary
     </a>
     
