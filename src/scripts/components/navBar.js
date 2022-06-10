@@ -2,7 +2,7 @@ import renderToDom from '../helpers/renderToDom';
 import ABC from '../../images/ABC.png';
 
 const navbar = () => {
-  const domString = `<nav class="navbar navbar-expand-lg bg-light">
+  const domString = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" id="home">
       <img src=${ABC} alt="ABC blocks" width="100" height="50">

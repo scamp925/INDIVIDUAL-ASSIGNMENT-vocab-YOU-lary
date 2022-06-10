@@ -3,6 +3,21 @@
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: #334059;
+}
+
+#filter-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 15px 0px;
+}
+
+#display-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .card {
+    margin: 2% 3%;
+  }
 }
