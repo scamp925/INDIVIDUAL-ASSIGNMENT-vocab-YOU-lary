@@ -15,8 +15,8 @@ const addVocabCardForm = (obj = {}) => {
       </div>
     <label for="category">Category</label>
     <div class="form-floating mb-3">
-      <select class="form-select form-control-lg" id="category" aria-label="category" ${obj.category || ''} required>
-        <option value="">Select a category</option>
+      <select class="form-select form-control-lg" id="category" aria-label="category" required>
+        <option value="">${obj.category || 'Select a category'}</option>
         <option value="HTML">HTML</option>
         <option value="CSS">CSS</option>
         <option value="JavaScript">JavaScript</option>
