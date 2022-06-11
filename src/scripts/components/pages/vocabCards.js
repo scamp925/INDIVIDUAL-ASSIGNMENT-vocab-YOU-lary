@@ -10,7 +10,7 @@ const vocabCards = (array) => {
   if (array.length) {
     let domString = '';
     array.forEach((item) => {
-      domString += `<div class="card" style="width: 18rem;">
+      domString += `<div class="card" style="width: 18rem; color: black;">
     <div class="card-body">
       <h5 class="card-title">${item.word}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Category: ${item.category}</h6>
