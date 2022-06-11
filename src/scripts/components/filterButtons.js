@@ -1,7 +1,7 @@
 import renderToDom from '../helpers/renderToDom';
 
 const filterBtns = () => {
-  const domString = `<div class="d-grid gap-2 d-md-block">
+  const domString = `<div class="d-grid gap-2 d-md-block fliter">
   <button type="button" class="btn btn-warning" id="html">HTML</button>
   <button type="button" class="btn btn-warning" id="css">CSS</button>
   <button type="button" class="btn btn-warning" id="javascript">JavaScript</button>
