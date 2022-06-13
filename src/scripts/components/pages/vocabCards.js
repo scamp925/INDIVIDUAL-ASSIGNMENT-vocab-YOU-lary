@@ -2,7 +2,7 @@ import clearDom from '../../helpers/clearDom';
 import renderToDom from '../../helpers/renderToDom';
 
 const noVocabCards = () => {
-  document.querySelector('#display-cards').innerHTML = 'No Vocabulary Cards; Please Create Your Word(s)';
+  document.querySelector('#display-cards').innerHTML = '<h2>No Vocabulary Cards; Please Create Your Word(s)</h2>';
 };
 
 const vocabCards = (array) => {
@@ -10,7 +10,7 @@ const vocabCards = (array) => {
   if (array.length) {
     let domString = '';
     array.forEach((item) => {
-      domString += `<div class="card" style="width: 18rem; color: black;">
+      domString += `<div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">${item.word}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Category: ${item.category}</h6>
