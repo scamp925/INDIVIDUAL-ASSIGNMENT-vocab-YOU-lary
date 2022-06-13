@@ -1,7 +1,7 @@
 import renderToDom from '../helpers/renderToDom';
 import ABC from '../../images/ABC.png';
 
-const navbar = () => {
+const navBar = () => {
   const domString = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" id="home">
@@ -25,4 +25,4 @@ const navbar = () => {
   renderToDom('#navbar', domString);
 };
 
-export default navbar;
+export default navBar;
