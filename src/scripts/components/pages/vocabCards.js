@@ -2,7 +2,7 @@ import clearDom from '../../helpers/clearDom';
 import renderToDom from '../../helpers/renderToDom';
 
 const noVocabCards = () => {
-  document.querySelector('#display-cards').innerHTML = 'No Vocabulary Cards; Please Create Your Word(s)';
+  document.querySelector('#display-cards').innerHTML = '<h2>No Vocabulary Cards; Please Create Your Word(s)</h2>';
 };
 
 const vocabCards = (array) => {
