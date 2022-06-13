@@ -18,10 +18,8 @@ const navbar = () => {
           <a class="nav-link active" aria-current="page" id="addNewVocab">Create a New Word</a>
         </li>
       </ul>
-      <span class="navbar-text logout">
-        <div id="logout-btn" style="float:right"></div>
-      </span>
     </div>
+    <div id="logout-btn" style="float:right"></div>
   </div>
 </nav>`;
   renderToDom('#navbar', domString);
