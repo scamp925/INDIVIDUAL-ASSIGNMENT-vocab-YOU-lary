@@ -2,7 +2,7 @@ import { getVocabCards } from '../../api/vocabCardsData';
 import logoutButton from '../components/buttons/logoutButton';
 import domBuilder from '../components/domBuilder';
 import filterBtns from '../components/filterButtons';
-import navbar from '../components/navbar';
+import navBar from '../components/navBar';
 import vocabCards from '../components/pages/vocabCards';
 import domEvents from '../events/domEvents';
 import filterEvents from '../events/filterEvents';
@@ -13,7 +13,7 @@ const startApp = (user) => {
   domBuilder();
   domEvents(user.uid);
   formEvents(user.uid);
-  navbar();
+  navBar();
   logoutButton();
   navbarEvents(user.uid);
   filterBtns();
