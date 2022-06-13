@@ -34,7 +34,10 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  color:#44c5a1;
+
+  h2 {
+    color:#44c5a1;
+  }
 
   .card {
     margin: 2% 2%;
