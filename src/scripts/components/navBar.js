@@ -8,7 +8,6 @@ const navBar = () => {
       <img src=${ABC} alt="ABC blocks" width="100" height="50">
       Vocab-YOU-lary
     </a>
-    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,7 +18,7 @@ const navBar = () => {
         </li>
       </ul>
     </div>
-    <div id="logout-btn" style="float:right"></div>
+    <div id="logout-btn"></div>
   </div>
 </nav>`;
   renderToDom('#navbar', domString);
