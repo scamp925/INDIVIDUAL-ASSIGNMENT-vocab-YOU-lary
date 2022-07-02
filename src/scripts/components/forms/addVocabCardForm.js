@@ -24,7 +24,7 @@ const addVocabCardForm = (obj = {}) => {
         <option value="Python" ${obj.category === 'Python' ? 'selected' : ''}>Python</option>
       </select>
     </div>
-      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="submit" class="btn btn-success">${obj.firebaseKey ? 'Update' : 'Submit'}</button>
 </form>`;
   renderToDom('#form-container', domString);
 };
