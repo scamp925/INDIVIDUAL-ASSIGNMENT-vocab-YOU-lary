@@ -36,14 +36,14 @@ const filterEvents = (uid) => {
     }
     if (e.target.id.includes('newest')) {
       getVocabCards(uid).then((vocabCardsArray) => {
-        const newest = vocabCardsArray.sort((a, b) => a.time_stamp - b.time_stamp);
-        vocabCards(newest);
+        const newestArray = vocabCardsArray.sort((a, b) => a.time_stamp - b.time_stamp);
+        vocabCards(newestArray);
       });
     }
     if (e.target.id.includes('oldest')) {
       getVocabCards(uid).then((vocabCardsArray) => {
-        const oldest = vocabCardsArray.sort((a, b) => b.time_stamp - a.time_stamp);
-        vocabCards(oldest);
+        const oldestArray = vocabCardsArray.sort((a, b) => b.time_stamp - a.time_stamp);
+        vocabCards(oldestArray);
       });
     }
   });
