@@ -24,6 +24,10 @@ const addVocabCardForm = (obj = {}) => {
         <option value="Python" ${obj.category === 'Python' ? 'selected' : ''}>Python</option>
       </select>
     </div>
+    <div class="form-check">
+     <input class="form-check-input" type="checkbox" value="" id="makePublic" checked>
+      <label class="form-check-label" for="flexCheckChecked">Make Public</label>
+    </div>
       <button type="submit" class="btn btn-success">${obj.firebaseKey ? 'Update' : 'Submit'}</button>
 </form>`;
   renderToDom('#form-container', domString);

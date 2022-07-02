@@ -12,6 +12,7 @@ const formEvents = (uid) => {
         category: document.querySelector('#category').value,
         dateOnCard: new Date().toLocaleString(),
         time_stamp: Date.now(),
+        makePublic: document.querySelector('#makePublic').checked,
         uid,
       };
       createVocabCard(newVocabCardObj).then((cardsArray) => vocabCards(cardsArray));
@@ -25,6 +26,7 @@ const formEvents = (uid) => {
         category: document.querySelector('#category').value,
         dateOnCard: new Date().toLocaleString(),
         time_stamp: Date.now(),
+        makePublic: document.querySelector('#makePublic').checked,
         firebaseKey,
         uid,
       };
