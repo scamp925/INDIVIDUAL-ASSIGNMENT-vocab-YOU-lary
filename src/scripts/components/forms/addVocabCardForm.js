@@ -16,12 +16,12 @@ const addVocabCardForm = (obj = {}) => {
     <label for="category">Category</label>
     <div class="form mb-3">
       <select class="form-select form-control-lg" id="category" aria-label="category" required>
-        <option value="">${obj.category || 'Select a category'}</option>
-        <option value="HTML">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="React">React</option>
-        <option value="Python">Python</option>
+        <option value="">Select a category</option>
+        <option value="HTML" ${obj.category === 'HTML' ? 'selected' : ''}>HTML</option>
+        <option value="CSS" ${obj.category === 'CSS' ? 'selected' : ''}>CSS</option>
+        <option value="JavaScript" ${obj.category === 'JavaScript' ? 'selected' : ''}>JavaScript</option>
+        <option value="React" ${obj.category === 'React' ? 'selected' : ''}>React</option>
+        <option value="Python" ${obj.category === 'Python' ? 'selected' : ''}>Python</option>
       </select>
     </div>
       <button type="submit" class="btn btn-success">Submit</button>
