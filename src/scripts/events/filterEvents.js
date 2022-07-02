@@ -28,6 +28,12 @@ const filterEvents = (uid) => {
     if (e.target.id.includes('all')) {
       getVocabCards(uid).then((vocabCardsArray) => vocabCards(vocabCardsArray));
     }
+    if (e.target.id.includes('A-Z')) {
+      getVocabCards(uid).then((vocabCardsArray) => {
+        const aToZArray = vocabCardsArray.sort((a, b) => a.word.localeCompare(b.word));
+        vocabCards(aToZArray);
+      });
+    }
   });
 };
 

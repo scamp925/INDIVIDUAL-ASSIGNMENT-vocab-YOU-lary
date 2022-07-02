@@ -10,9 +10,9 @@ const filterBtns = () => {
   <button type="button" class="btn btn-warning" id="all">All Languages</button>
   <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Sort Vocabulary Cards</button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item">A-Z</a></li>
-      <li><a class="dropdown-item">Newest</a></li>
-      <li><a class="dropdown-item">Oldest</a></li>
+      <li><a class="dropdown-item" id='A-Z'>A-Z</a></li>
+      <li><a class="dropdown-item" id='newest'>Newest</a></li>
+      <li><a class="dropdown-item" id='oldest'>Oldest</a></li>
     </ul>
   </div>`;
   renderToDom('#filter-container', domString);
