@@ -10,7 +10,8 @@ const formEvents = (uid) => {
         word: document.querySelector('#word').value,
         definition: document.querySelector('#definition').value,
         category: document.querySelector('#category').value,
-        time_stamp: Math.floor(Date.now() / 1000),
+        dateOnCard: new Date().toLocaleString(),
+        time_stamp: Date.now(),
         uid,
       };
       createVocabCard(newVocabCardObj).then((cardsArray) => vocabCards(cardsArray));
@@ -22,7 +23,8 @@ const formEvents = (uid) => {
         word: document.querySelector('#word').value,
         definition: document.querySelector('#definition').value,
         category: document.querySelector('#category').value,
-        time_stamp: Math.floor(Date.now() / 1000),
+        dateOnCard: new Date().toLocaleString(),
+        time_stamp: Date.now(),
         firebaseKey,
         uid,
       };
