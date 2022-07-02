@@ -14,7 +14,7 @@ const addVocabCardForm = (obj = {}) => {
         <textarea class="form-control" placeholder="Definition" id="definition" style="height: 100px" required>${obj.definition || ''}</textarea>
       </div>
     <label for="category">Category</label>
-    <div class="form-floating mb-3">
+    <div class="form mb-3">
       <select class="form-select form-control-lg" id="category" aria-label="category" required>
         <option value="">${obj.category || 'Select a category'}</option>
         <option value="HTML">HTML</option>
