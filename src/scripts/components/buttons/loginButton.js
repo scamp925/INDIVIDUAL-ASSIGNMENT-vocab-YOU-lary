@@ -1,6 +1,6 @@
 import signIn from '../../helpers/auth/signIn';
 import renderToDom from '../../helpers/renderToDom';
-import ABC from '../../../images/ABC.png';
+import ABC from '../../../images/ABC-square.png';
 
 // GOOGLE LOGIN BUTTON
 const loginButton = () => {

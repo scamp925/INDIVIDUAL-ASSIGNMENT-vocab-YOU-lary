@@ -1,9 +1,10 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~bootstrap/scss/bootstrap";
-
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
 
 body {
   background-color: #334059;
+  font-family: 'Trispace', sans-serif;
 }
 
 .login {
@@ -13,9 +14,10 @@ body {
   text-align: center;
   width: 75%;
   .abc {
-    height: 25%;
-    width: 50%;
+    border-radius: 28%;
+    height: 40%;
     margin-bottom: 25px;
+    width: 40%;
   }
 }
 
