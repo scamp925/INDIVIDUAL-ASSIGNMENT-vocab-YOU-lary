@@ -1,9 +1,10 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~bootstrap/scss/bootstrap";
-
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
 
 body {
   background-color: #334059;
+  font-family: 'Trispace', sans-serif;
 }
 
 .login {
