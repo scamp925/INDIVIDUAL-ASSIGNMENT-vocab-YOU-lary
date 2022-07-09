@@ -3,6 +3,7 @@ import renderToDom from '../../helpers/renderToDom';
 
 const addVocabCardForm = (obj = {}) => {
   clearDom();
+  document.querySelector('#filter-container').innerHTML = '';
   const domString = `
   <form id="${obj.firebaseKey ? `update-vocab-word--${obj.firebaseKey}` : 'submit-vocab-word'}" class="mb-4">
     <div class="form-group">

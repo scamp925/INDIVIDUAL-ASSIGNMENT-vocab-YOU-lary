@@ -1,4 +1,5 @@
 import { createVocabCard, updateVocabCard } from '../../api/vocabCardsData';
+import filterBtns from '../components/filterButtons';
 import vocabCards from '../components/pages/vocabCards';
 
 const formEvents = (uid) => {
@@ -16,6 +17,7 @@ const formEvents = (uid) => {
       };
       createVocabCard(newVocabCardObj).then((cardsArray) => vocabCards(cardsArray));
     }
+    filterBtns();
     // CLICK EVENT FOR UPDATING/EDITING VOCAB CARD
     if (e.target.id.includes('update-vocab-word')) {
       const [, firebaseKey] = e.target.id.split('--');
@@ -30,6 +32,7 @@ const formEvents = (uid) => {
       };
       updateVocabCard(updatedVocabObj).then(vocabCards);
     }
+    filterBtns();
   });
 };
 
