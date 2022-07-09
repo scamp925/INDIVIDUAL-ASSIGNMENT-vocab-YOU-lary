@@ -15,7 +15,6 @@ const vocabCards = (array) => {
       <h5 class="card-title">${item.word}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Category: ${item.category}</h6>
       <p class="card-text">${item.definition}</p>
-      <p>${item.dateOnCard}</p>
       <a href="#" class="card-link" id="edit-btn--${item.firebaseKey}">Edit</a>
       <a href="#" class="card-link" id="delete-btn--${item.firebaseKey}">Delete</a>
     </div>
