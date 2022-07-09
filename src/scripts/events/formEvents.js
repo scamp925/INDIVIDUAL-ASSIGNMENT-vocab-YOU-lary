@@ -1,4 +1,5 @@
 import { createVocabCard, updateVocabCard } from '../../api/vocabCardsData';
+import filterBtns from '../components/filterButtons';
 import vocabCards from '../components/pages/vocabCards';
 
 const formEvents = (uid) => {
@@ -30,6 +31,7 @@ const formEvents = (uid) => {
       };
       updateVocabCard(updatedVocabObj).then(vocabCards);
     }
+    filterBtns();
   });
 };
 
