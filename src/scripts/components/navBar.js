@@ -1,7 +1,7 @@
 import renderToDom from '../helpers/renderToDom';
 import ABC from '../../images/ABC-square.png';
 
-const navBar = () => {
+const navBar = (user) => {
   const domString = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" id="home">
@@ -18,6 +18,7 @@ const navBar = () => {
         </li>
       </ul>
     </div>
+    <div id="user-name">Welcome, ${user.displayName}</div>
     <div id="logout-btn"></div>
   </div>
 </nav>`;
