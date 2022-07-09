@@ -1,4 +1,5 @@
 import { getVocabCards } from '../../api/vocabCardsData';
+import filterBtns from '../components/filterButtons';
 import addVocabCardForm from '../components/forms/addVocabCardForm';
 import vocabCards from '../components/pages/vocabCards';
 import signOut from '../helpers/auth/signOut';
@@ -13,6 +14,7 @@ const navbarEvents = (uid) => {
   });
   // BACK TO THE HOMEPAGE FROM LOGO
   document.querySelector('#home').addEventListener('click', () => {
+    filterBtns();
     getVocabCards(uid).then((vocabCardsArray) => vocabCards(vocabCardsArray));
   });
 };
